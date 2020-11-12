@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-todo",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "zhouyijun",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.14.7",
+    "commander": "^6.2.0",
+    "ts-node": "^9.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  }
+}
