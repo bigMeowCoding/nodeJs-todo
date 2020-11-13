@@ -1,7 +1,14 @@
 {
-  "name": "nodejs-todo",
-  "version": "0.0.1",
-  "main": "index.js",
+  "name": "zyj-nodejs-todo",
+  "version": "0.0.2",
+  "main": "./dist/cli.js",
+  "bin": {
+    "t": "cli.js"
+  },
+  "files": [
+    "./dist/*.js",
+    "./dist/*.d.ts"
+  ],
   "author": "zhouyijun",
   "license": "MIT",
   "dependencies": {
