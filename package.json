@@ -1,14 +1,14 @@
 {
   "name": "zyj-nodejs-todo",
+  "preferGlobal": "true",
   "bin": {
-    "t": "./dist/cli.js"
+    "todo": "./dist/cli.js"
   },
-  "version": "0.0.4",
-  "main": "./dist/cli.js",
   "files": [
-    "./dist/*.js",
-    "./dist/*.d.ts"
+    "dist"
   ],
+  "version": "0.0.10",
+  "main": "./dist/cli.js",
   "author": "zhouyijun",
   "license": "MIT",
   "dependencies": {

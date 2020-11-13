@@ -1,4 +1,4 @@
-#!/usr/bin/env nodets
+#!/usr/bin/env node
 import { Command } from "commander";
 import add from "./utils/add";
 import db from "./utils/db";
