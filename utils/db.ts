@@ -8,7 +8,7 @@ export default {
     return new Promise((resolve, reject) => {
       fs.readFile(path, { flag: "a+" }, (err, data) => {
         if (err) {
-          console.log(err);
+          reject(err)
           return;
         }
         let todos;
@@ -25,7 +25,6 @@ export default {
     return new Promise((resolve, reject) => {
       fs.writeFile(todoPath, JSON.stringify(todos) + "\n", (writeError) => {
         if (writeError) {
-          console.log(writeError);
           reject(writeError);
         }
         resolve();

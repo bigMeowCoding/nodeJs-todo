@@ -7,5 +7,4 @@ export default async function add(missions: string[]) {
     done: false,
   });
   await db.write(todos);
-    console.log(todos)
 }
