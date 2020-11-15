@@ -1,14 +1,15 @@
 import path from "path";
-import * as fs from "fs";
+import fs from "fs";
 import { Todo } from "../interface/enity";
 const home = process.env.HOME || "";
 const todoPath = path.join(home, "todos");
+
 export default {
   read(path = todoPath): Promise<Todo[]> {
     return new Promise((resolve, reject) => {
       fs.readFile(path, { flag: "a+" }, (err, data) => {
         if (err) {
-          reject(err)
+          reject(err);
           return;
         }
         let todos;
