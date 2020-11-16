@@ -24,7 +24,7 @@ export default {
   },
   write(todos: Todo[], path = todoPath) {
     return new Promise((resolve, reject) => {
-      fs.writeFile(todoPath, JSON.stringify(todos) + "\n", (writeError) => {
+      fs.writeFile(path, JSON.stringify(todos) + "\n", (writeError) => {
         if (writeError) {
           reject(writeError);
         }
