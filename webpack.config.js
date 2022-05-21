@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const  Webpack = require("webpack");
 
 module.exports = {
   mode: "production",
@@ -36,5 +37,8 @@ module.exports = {
     port: 9000,
   },
   target: "node",
-  plugins: [new CleanWebpackPlugin()],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new Webpack.BannerPlugin({ banner: "#!/usr/bin/env node", raw: true }),
+  ],
 };
