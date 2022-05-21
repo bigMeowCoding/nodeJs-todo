@@ -1,6 +1,6 @@
 {
   "name": "zyj-nodejs-todo",
-  "preferGlobal": "true",
+  "preferGlobal": true,
   "bin": {
     "todo": "./dist/cli.js"
   },
@@ -11,7 +11,7 @@
     "test": "jest",
     "start":"npx ts-node ./cli.ts"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./dist/cli.js",
   "author": "zhouyijun",
   "license": "MIT",
