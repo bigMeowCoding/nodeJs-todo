@@ -28,7 +28,7 @@ export default {
         if (writeError) {
           reject(writeError);
         }
-        resolve();
+        resolve(true);
       });
     });
   },
